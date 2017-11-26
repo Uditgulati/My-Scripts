@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cd ~/Documents/$1
+rm *
+var='file2.cpp'
+if [ $1 == 'Codeforces' ]
+ then
+	var='file1.cpp'
+fi
+cp ~/Documents/Format/$var ~/Documents/$1/one.cpp
+cp ~/Documents/Format/$var ~/Documents/$1/two.cpp
+cp ~/Documents/Format/$var ~/Documents/$1/three.cpp
+cp ~/Documents/Format/$var ~/Documents/$1/four.cpp
+cp ~/Documents/Format/$var ~/Documents/$1/five.cpp
+subl one.cpp
+subl two.cpp
+subl three.cpp
+subl four.cpp
+subl five.cpp
+echo Done
