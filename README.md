@@ -15,6 +15,7 @@ A repo for all of the scripts that i have created so far. Some are written in Ba
 		words='Codeforces Lunchtime Long' #list for autocomplete. Modify acc to requirements
 		complete -W "${words}" 'udit'
 		```
+		To specify the number of files to be created, use command `udit <Contest_Name> <Num>`. <Num> can have values from 1 to 10.
 
 ### Python
 
