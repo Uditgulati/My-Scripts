@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd ~/Documents/$1
-rm *
 num=5
 if [ $1 == 'Lunchtime' ]
  then
@@ -17,8 +15,17 @@ if [ $1 == 'Codeforces' ]
 	var='file1.cpp'
 fi
 
+if [ ! -d ~/Documents/$1 ]
+ then
+	echo Folder does not exist
+	num=0
+fi
+
+
 if [ $num -gt 0 ]
  then
+ 	cd ~/Documents/$1
+	rm *
 	cp ~/Documents/Format/$var ~/Documents/$1/one.cpp
 	subl one.cpp
 fi
@@ -68,4 +75,9 @@ if [ $num -gt 9 ]
 	cp ~/Documents/Format/$var ~/Documents/$1/ten.cpp
 	subl ten.cpp
 fi
-echo Done
+
+
+if [ $num -gt 0 ]
+ then
+	echo Done
+fi
