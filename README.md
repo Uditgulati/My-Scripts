@@ -12,7 +12,7 @@ A repo for all of the scripts that i have created so far. Some are written in Ba
 		Add these lines to .bashrc
 		```
 		alias udit='. udit'
-		words='Codeforces Lunchtime Long' ##list for autocomplete. Modify acc to requirements
+		words='Codeforces Lunchtime Long' #list for autocomplete. Modify acc to requirements
 		complete -W "${words}" 'udit'
 		```
 
